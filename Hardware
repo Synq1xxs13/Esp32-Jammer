@@ -1,0 +1,42 @@
+Electronic Components
+Quantity	Component	Specifications	Notes
+1	ESP32 Development Board	Any variant with GPIO breakout	ESP32-WROOM, ESP32-S3, etc.
+4	NRF24L01+ Module	2.4GHz transceiver	PCB antenna or external SMA
+1	OLED Display	128x64 pixels, I2C interface	SSD1306 driver
+2	Push Button	SPST momentary	Tactile or panel mount
+4	Electrolytic Capacitor	100uF - 470uF, 6.3V or higher	One per NRF module
+1	Electrolytic Capacitor	470uF - 1000uF, 6.3V or higher	For main power filtering
+1	Protoboard	400 or 800 points	Breadboard for prototyping
+1	USB Cable	USB-A to Micro-USB or USB-C	For ESP32 programming and power
+1	Power Supply	5V, 1A minimum	USB charger or bench supply
+Required Tools
+Quantity	Tool	Notes
+1	USB to UART adapter	Only if ESP32 lacks USB programming
+1	Multimeter	For continuity and voltage checks
+1	Wire stripper	For preparing jumper wires
+1	Screwdriver	If using terminal blocks
+Consumables
+Quantity	Item	Notes
+20+	Jumper wires	Male-to-male, 10cm-20cm
+20+	Dupont connectors	Optional, for custom cables
+1 roll	Solder wire	For permanent connections
+1 roll	Electrical tape	For insulation
+1 roll	Heat shrink tubing	Optional for cable management
+Optional Components
+Quantity	Component	Specifications	Notes
+4	NRF24L01+ with External Antenna	2.4GHz with SMA connector	For extended range
+4	Antenna for NRF24L01+	2.4GHz SMA or RP-SMA	2dBi to 5dBi
+1	Battery	3.7V LiPo or 5V USB power bank	For portable operation
+1	Battery Charger	TP4056 or similar	For LiPo charging
+1	Enclosure	Plastic or metal box	For finished device
+4	M2/M3 Screws	Various lengths	For mounting components
+1	Voltage Regulator	AMS1117-3.3 or similar	If using 5V battery
+1	LED	Any color	For status indication (optional)
+4	Resistor	220-330 ohm	For LEDs (if used)
+Required Software
+Software	Version	Purpose
+MicroPython	1.20 or newer	Firmware for ESP32
+Thonny	4.x	Code editor and flasher
+esptool	Latest	ESP32 firmware flashing
+mpfshell	Latest	File transfer
+ampy	Latest	Alternative file transfer
